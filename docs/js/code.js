@@ -8,8 +8,8 @@ input.addEventListener('keypress', function(event) {
   const key = event.key;
   if (!/[a-z,ñ, ]/.test(key)) {
     event.preventDefault();    
-    imgAlerta.src = "../img/alert_.svg";    
-  }else{imgAlerta.src = "../img/alert.svg";}
+    imgAlerta.src = "img/alert_.svg";    
+  }else{imgAlerta.src = "img/alert.svg";}
   
 });
 input.addEventListener('keyup', function() {
@@ -19,8 +19,8 @@ input.addEventListener('keyup', function() {
     bcopiar.style.display="none"; 
     resultado.style.backgroundImage = "none";      
   } else {
-    if (screenWidth > 543) {resultado.style.backgroundImage = "url('../img/encriptar_.jpg')";}
-    else {resultado.style.backgroundImage = "url('../img/encriptar.jpg')";}
+    if (screenWidth > 543) {resultado.style.backgroundImage = "url('img/encriptar_.jpg')";}
+    else {resultado.style.backgroundImage = "url('img/encriptar.jpg')";}
   }
 });
 /********************(ENcriptar mensaje)-->Encrypter / Decrypter***********************/
@@ -57,8 +57,8 @@ function desencriptarM() {
 function copiarM() {  
   var screenWidth = window.offsetWidth;    
   input.focus();     
-    if (screenWidth > 543) {resultado.style.backgroundImage = "url('../img/encriptar_.jpg')";}
-    else {resultado.style.backgroundImage = "url('../img/encriptar.jpg')";}      
+    if (screenWidth > 543) {resultado.style.backgroundImage = "url('img/encriptar_.jpg')";}
+    else {resultado.style.backgroundImage = "url('img/encriptar.jpg')";}      
   try {
     navigator.clipboard.writeText(document.querySelector(".mostrarresultado").textContent);
     console.log('El texto se copio en el portapapaeles');
